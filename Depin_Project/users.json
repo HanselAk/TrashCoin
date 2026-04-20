@@ -1,0 +1,14 @@
+{
+  "Hansel": {
+    "address": "addr_hansel_abc123",
+    "balance": 100
+  },
+  "Bob": {
+    "address": "addr_bob_def456",
+    "balance": 50
+  },
+  "Steve": {
+    "address": "addr_steve_ghi789",
+    "balance": 75
+  }
+}
