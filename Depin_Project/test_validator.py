@@ -40,8 +40,7 @@ for name, data in users.items():
 print()
 
 
-# Build one sample (signed) request per user — used for the self-test below.
-# Wallet would normally build and sign these on its own side.
+
 def build_sample_request(user_data):
     req = {
         "device": "raspberry_pi_hub",
@@ -207,7 +206,6 @@ def validator_3(request):
             and check_signature(request))
 
 
-# --- Self-test: run every user's sample request through the validators ---
 print("Self-test:")
 for name, req in sample_requests.items():
     votes = [validator_1(req), validator_2(req), validator_3(req)]
